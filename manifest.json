@@ -6,6 +6,7 @@
   "background": {
     "service_worker": "background.js"
   },
+  "permissions": ["activeTab", "tabs", "scripting"],
   "action": {
     "default_title": "Geoguessr hacks",
     "default_popup": "popup.html"
