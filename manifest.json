@@ -2,12 +2,14 @@
   "name": "Geoguessr Hack Extension",
   "description": "This extension can be used to hack Geoguessr",
   "version": "1.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["activeTab", "tabs", "scripting"],
-  "action": {
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
     "default_title": "Geoguessr hacks",
     "default_popup": "popup.html"
   }
