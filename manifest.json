@@ -1,0 +1,9 @@
+{
+  "name": "Geoguessr Hack Extension",
+  "description": "This extension can be used to hack Geoguessr",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  }
+}
