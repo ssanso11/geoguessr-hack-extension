@@ -2,7 +2,7 @@
 // here
 function open_map(lat, lng) {
     const url = "https://google.com/maps/place/" + lat + ", " + lng; // eventually pass in lat lng
-    //window.open(url);
+    window.open(url);
     console.log(lat);
     console.log(lng);
 }
