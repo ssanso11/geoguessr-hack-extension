@@ -9,10 +9,10 @@ function open_map(lat, lng) {
 
 // open in maps button
 openMapsBtn.addEventListener("click", function () {
-    chrome.tabs.query({active: true}, function (tabs) {
+    chrome.tabs.query({ active: true }, function (tabs) {
         const { id: tabId } = tabs[0].url;
         chrome.tabs.executeScript(tabId, { runAt: 'document_start', code: 'document.querySelectorAll("#__NEXT_DATA__")[0].text' }, function (result) {
-	    const json_next_data = JSON.parse(result[0]);
+            const json_next_data = JSON.parse(result[0]);
             const rounds = json_next_data.props.pageProps.game.rounds;
             console.log(rounds);
             const thisRound = rounds[rounds.length - 1];
@@ -22,8 +22,7 @@ openMapsBtn.addEventListener("click", function () {
     });
 });
 refreshPageBtn.addEventListener("click", function () {
-    chrome.tabs.query({active: true}, function (tabs) {
-        console.log("refreshhing...");
-        chrome.tabs.reload(tabs[0].id);
+    chrome.tabs.query({ active: true }, function (tabs) {
+        chrome.tabs.reload();
     });
 });
