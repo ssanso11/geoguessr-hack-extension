@@ -1,0 +1,24 @@
+.body {
+  font-family: 'Inter', sans-serif;
+}
+.separater {
+  margin: 10px 0px 20px 0px; 
+}
+#buttons {
+  width: 210px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.action-btn {
+  width: calc(50% - 10px);
+  margin: 0 auto;
+  margin-right: 5px;
+  display: inline-block;
+  background-color: #cc302e;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  border-radius: 3px;
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.4);
+}
