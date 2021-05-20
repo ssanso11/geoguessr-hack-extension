@@ -45,7 +45,9 @@ submitBtn.addEventListener("click", function () {
                 const yardsAway = document.getElementById('distanceInputYrds').value;
                 console.log(token);
                 guess_location(lat, lng, yardsAway, token);
-                reloadTab();
+                setTimeout(() => {
+                    reloadTab();
+                }, 500);
             });
         });
     }, 800);
