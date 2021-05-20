@@ -3,9 +3,6 @@
   "description": "This extension can be used to hack Geoguessr",
   "version": "1.0",
   "manifest_version": 2,
-  "background": {
-    "service_worker": "background.js"
-  },
   "permissions": [
     "tabs", "http://*/*", "https://*/*"
   ],
