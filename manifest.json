@@ -1,6 +1,6 @@
 {
   "name": "Geoguessr Hack Extension",
-  "description": "This extension can be used to hack Geoguessr",
+  "description": "To find difficult locations in Geoguessr",
   "version": "1.0",
   "manifest_version": 2,
   "permissions": [
