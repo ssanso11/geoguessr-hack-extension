@@ -5,8 +5,8 @@
   "manifest_version": 2,
   "permissions": [
     "tabs",
-    "http://*/*",
-    "https://*/*"
+    "http://geoguessr.com/*",
+    "https://geoguessr.com/*"
   ],
   "browser_action": {
     "default_title": "Geoguessr hacks",
